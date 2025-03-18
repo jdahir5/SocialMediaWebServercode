@@ -1,0 +1,229 @@
+#ChatUserSugesstion {
+  overflow: auto;
+  max-height: 650px; 
+}
+
+#ChatUserSugesstion::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+.suggestion-item img {
+  border-radius: 50%; /* This makes the image round */
+  width: 50px; /* Adjust the size of the image */
+  height: 50px; /* Ensure the height and width are equal for a perfect circle */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while filling the circle */
+}
+
+
+#Chat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f6f8;
+}
+
+/* Chat header with user name and photo */
+#ChatUsername {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+#ChatUsername img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+.chat-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Old chat messages container */
+#oldchat {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+#oldchat::-webkit-scrollbar {
+  width: 0px; /* Hides scrollbar */
+  background: transparent; /* Makes scrollbar invisible */
+}
+
+#oldchat::-webkit-scrollbar-thumb {
+  background: transparent; /* Thumb is invisible */
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  position: relative;
+}
+
+.sender {
+  background-color: #e4f7e4;
+  align-self: flex-end;
+  align-items: end;
+
+}
+
+.receiver {
+  background-color: #f0f0f0;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.message p {
+  font-size: 14px;
+  color: #333;
+}
+
+#myForm {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#Msgtext {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 10px;
+  font-size: 14px;
+}/* 
+
+#sendButton {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#sendButton:hover {
+  background-color: #45a049;
+}
+ */
+ 
+ .small-text {
+  font-size: 10px; /* Make time text smaller */
+  color: gray; /* Optional: Make it gray */
+}
+.message-box {
+  background-color: #f0f0f0;  
+  padding: 10px;             
+  border-radius: 8px;        
+  display: inline-block;      
+  max-width: 10%;            
+}
+
+.sender {
+  background-color: #dcf8c6;  
+  align-self: flex-end;       
+  max-width: 15%;             
+  word-wrap: break-word;      
+  padding: 10px;              
+  border-radius: 8px;       
+  margin-left: auto;         
+}
+
+
+.receiver {
+  background-color: pink;  
+  align-self: flex-start; 
+  max-width: 15%;         
+  word-wrap: break-word;   
+  padding: 10px;           
+  border-radius: 8px;     
+}
+
+
+#myForm {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  gap: 10px; /* Space between elements */
+}
+
+#Msgtext {
+  flex: 1; /* Expands to take available space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #4CAF50;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s;
+}
+
+.icon-btn:hover {
+  color: #45a049;
+}
+
+#sendButton {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap; /* Prevents text from breaking */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sendButton:hover {
+  background-color: #45a049;
+}
+.flex-row-container {
+  display: flex;          /* Makes the container a flexbox */
+  justify-content: space-between;  /* Aligns items with space between them */
+  align-items: center;    /* Centers items vertically */
+  background-color: #f0f0f0;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+}
+
+.flex-item {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}

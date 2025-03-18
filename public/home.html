@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Loading...</title>
+    <link rel="shortcut icon" href="\insta photo\facebook.png"type="image/x-icon" />
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zuck.js/dist/zuck.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/zuck.js/dist/zuck.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+  <div class="section1">
+    <div id="home">
+        <div style="height: 3rem;">
+            <div class="left">
+                <div style="margin-left: 0.7rem;">
+                    <div class="item flex padding">
+                        <svg aria-label="Home" class="" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="24" role="img"
+                            viewBox="0 0 24 24" width="24">
+                            <path
+                                d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z">
+                            </path>
+                        </svg>
+                        <a href="home.html" class="margin-5x"style="text-decoration: none; color: black;">Home</a>
+                    </div>
+
+                    <div class="item flex padding">
+                        <svg aria-label="Explore" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="24"
+                            role="img" viewBox="0 0 24 24" width="24">
+                            <polygon fill="none"
+                                points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            </polygon>
+                            <polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056">
+                            </polygon>
+                            <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                        </svg>
+                        <a href="#" class="margin-5x" style="text-decoration: none; color: black;">Explorer</a>
+                    </div>
+
+                    <div class="item flex padding">
+                        <svg aria-label="Reels" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="24"
+                            role="img" viewBox="0 0 24 24" width="24">
+                            <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="2.049"
+                                x2="21.95" y1="7.002" y2="7.002"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" x1="13.504" x2="16.362" y1="2.001" y2="7.002"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" x1="7.207" x2="10.002" y1="2.11" y2="7.002"></line>
+                            <path
+                                d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"></path>
+                            <path
+                                d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0Z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+
+                        <a href="#" class="margin-5x"style="text-decoration: none; color: black;">Reels</a>
+                    </div>
+
+                    <div class="item flex padding">
+                        <svg aria-label="Direct" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="24"
+                            role="img" viewBox="0 0 24 24" width="24">
+                            <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22"
+                                x2="9.218" y1="3" y2="10.083"></line>
+                            <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                                stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                        </svg>
+                        <a href="Message.html" class="margin-5x"style="text-decoration: none; color: black;">Messages</a>
+                    </div>
+<div class="item flex padding">
+    <svg aria-label="New post" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="24"
+      role="img" viewBox="0 0 24 24" width="24"onclick="openUploadPostPopup()">
+      <path
+        d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z"
+        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2"></path>
+      <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line>
+      <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line>
+    </svg>
+    <a href="#" class="margin-5x" onclick="openUploadPostPopup()" style="text-decoration: none; color: black;">Create</a>
+  </div>
+  <div id="uploadPostPopup" class="popup-modal" style="display: none;">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closeUploadPostPopup()">&times;</span>
+      <h3>Upload Post</h3>
+      <form id="postForm" enctype="multipart/form-data">
+        <textarea id="caption" name="caption" placeholder="Write your caption here..."></textarea><br><br>
+        <input type="file" id="imageInput" name="post-image" accept="image/*" onchange="previewImage(event)"><br><br>
+        <div id="imagePreviewContainer" class="scrollable-container">
+          <img id="imagePreview" alt="Image Preview" style="display: none;">
+        </div>
+        <button class="button" type="submit">Upload Post</button>
+        <button type="button" onclick="closeUploadPostPopup()">Close</button>
+      </form>
+    </div>
+  </div>
+  
+
+
+
+  <div class="item flex padding" id="toggleSidebar">
+    
+  <svg aria-label="Notifications" class="x1lliihq x1n2onr6" color="rgb(0, 0, 0)"
+      fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
+      <title>Notifications</title>
+      <path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path>
+  </svg>
+  <a href="#" class="margin-5x" style="text-decoration: none; color: black;">Notifications</a>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <button class="close-btn" onclick="toggleSidebar()">X</button>
+  <p> New notifications</p>
+  <hr style="color:pink ;">
+  <div id="New_Notification"></div>
+</div>
+
+
+
+                    <div class="item flex padding">
+                        <div class="img" id="profile_pic" style="display: flex;align-items: center; ">
+                          
+                        </div>
+                        <a href="#" class="margin-5x"onclick="Show_user_info()" style="text-decoration: none; color: black;">Profile</a>
+                    </div>
+
+                    <div class="flex padding margin-t-long-rem">
+                        <svg aria-label="Settings" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="24"
+                            role="img" viewBox="0 0 24 24" width="24">
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" x1="3" x2="21" y1="4" y2="4"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" x1="3" x2="21" y1="12" y2="12"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" x1="3" x2="21" y1="20" y2="20"></line>
+                        </svg>
+                        <a href="#" class="margin-5x" style="text-decoration: none; color: black;">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+<div class="section2">
+    <div class="flex-container">
+
+        <div id="loggin_user_story" style="padding-top: 5.8vh; padding-left: 5vh;"></div>
+        <div class="center" id="center"></div>
+
+        <!-- Full-Screen Story Modal -->
+        <div id="storyModal" class="modal">
+                <span id="storyUsername"></span>
+                <span id="storyTime" style="font-size: 12px; opacity: 0.7;"></span> <!-- Time here -->
+            
+            
+            <span class="close" onclick="closeStory()">&times;</span>
+            <div id="storyProgressContainer" style="position: absolute; top: 5px; left: 50%; transform: translateX(-50%); width: 40%; height: 4px; background: rgba(255, 255, 255, 0.3); border-radius: 5px; overflow: hidden;">
+    <div id="storyProgress" style="width: 0%; height: 100%; background: white; transition: width 5s linear;"></div>
+</div>
+
+            <img id="storyImage" class="modal-content">
+             <!-- Reply Input Box -->
+    <div class="story-reply-container">
+        <input type="text" id="storyReply" class="story-reply-input" placeholder="Reply to story..." />
+        <button onclick="sendStoryReply()" class="story-reply-button">Send</button>
+    </div>
+        </div>
+        
+    </div>
+    
+
+    <div class="w margin-t-3r margin-l-5x center-item">
+        <div id="posts"></div>
+    </div>
+</div>
+
+            <div class="vertical-line"></div> 
+<div id="userCanvas">
+                <div id="userCanvasContent">
+                </div>
+                <hr>
+                <div id="UserPosts" class="posts-grid">
+                    
+                  </div>
+                  
+                </div>
+
+<div class="section3" id="sugessionProfile">
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+<script  src="home.js">
+
+
+</script>
+
+
+
+</html>

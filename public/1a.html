@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Section Layout</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .left-section,
+        .center-section,
+        .right-section {
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .left-section {
+            width: 10%;
+            background-color: #f4f4f4;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .center-section {
+            flex: 1;
+            background-color: #ffffff;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+        }
+        .right-section {
+            width: 25%;
+            background-color: #f9f9f9;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #eaeaea;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Section -->
+    <div class="left-section">
+        <h2>Left Section</h2>
+        <form id="left-form">
+            <input type="text" id="left-input" placeholder="Add to Left List">
+            <button type="button" onclick="addToLeft()">Add</button>
+        </form>
+        <ul id="left-list"></ul>
+    </div>
+
+    <!-- Center Section -->
+    <div class="center-section">
+        <h2>Center Section</h2>
+        <button onclick="showCenterMessage()">Click Me</button>
+        <p id="center-message" style="color: green; margin-top: 10px; display: none;">
+            You clicked the button in the center!
+        </p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+        <h2>Right Section</h2>
+        <form id="right-form">
+            <input type="text" id="right-input" placeholder="Add to Right List">
+            <button type="button" onclick="addToRight()">Add</button>
+        </form>
+        <ul id="right-list"></ul>
+    </div>
+
+
+
+</body>
+</html>

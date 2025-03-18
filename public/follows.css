@@ -1,0 +1,33 @@
+#home {
+    display: flex;
+}
+
+.home-icon {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 750px;
+    width: 30vh;
+    margin-top: 3%;
+    margin-left: 7%;
+    border: solid #d4cdcd 2px;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+} 
+
+#home-icon {
+    padding-top: 80px;
+    padding-left: 20px;
+}
+
+
+#Profile_pic{
+    background-color: aqua;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-left:55px;
+    margin-top: 20px;
+}
